@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "LoginPage";
+}
+
+<h2>LoginPage</h2>
+<div class="container">
+    <table class="table">
+        <tr>
+            <td>
+                User Name
+            </td>
+            <td>
+                @Html.TextBox("username", "", new { @class = "Please Enter User Name" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+                @Html.TextBox("password", "", new { @class = "Plese Enter Password" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="btnlogin" value="submit" class="btn btn-primary" />
+            </td>
+        </tr>
+
+    </table>
+    <div class="danger alert-danger collapse small" id="divError">
+        <a class="close" id="linkClose" href="#">&times;</a>
+        <div id="divErrorText">
+        </div>
+    </div>
+</div>
+

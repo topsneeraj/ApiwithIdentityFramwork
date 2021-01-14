@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Data";
+}
+
+<h2>Data</h2>
+<div class="well">
+
+    <button type="button" id="btnLoad" class="btn btn-primary ">LoadProduct</button>
+
+</div>
+<div id="divTest" class="well hidden">
+
+    <table class="table" id="loadData">
+        <thead>
+            <tr>
+                <th>
+                    Product Id
+                </th>
+                <th>
+                    Product Name
+                </th>
+                <th>
+                   Introduction Date
+                </th>
+                <th>
+                    URL
+                </th>
+                <th>
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+</div>
+<div class="danger alert-danger collapse small" id="divError">
+    <a class="close" id="linkClose" href="#">&times;</a>
+    <div id="divErrorText">
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="modelError" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>session Expire </h4>
+            </div>
+            <div class="modal-body">
+
+                <h2>Please Close This Pop up box to Login </h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary">Close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
